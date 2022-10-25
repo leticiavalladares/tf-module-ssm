@@ -1,5 +1,5 @@
 resource "aws_iam_instance_profile" "instance_profile" {
-  name = "ssm_profile"
+  name = "${var.instance_name}-profile"
   role = aws_iam_role.instance_role.name
 }
 
