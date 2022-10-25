@@ -2,7 +2,19 @@
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-No requirements.
+Install the Session Manager plugin for the AWS CLI (to have access to the instances through the terminal)
+
+macOS
+```sh
+curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/mac/session-manager-plugin.pkg" -o "session-manager-plugin.pkg"
+
+sudo installer -pkg session-manager-plugin.pkg -target /
+sudo ln -s /usr/local/sessionmanagerplugin/bin/session-manager-plugin /usr/local/bin/session-manager-plugin
+```
+
+Otherwise you can use Session Manager on the AWS Management Console.
+
+**Instances deployed without SSH**
 
 ## Providers
 
